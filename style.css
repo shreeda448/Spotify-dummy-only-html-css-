@@ -1,0 +1,402 @@
+body{
+    font-family:'Montserrat',sans-serif ;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    width: 25rem;
+    background-color:black;
+    border-radius: 1rem; /*16px*/
+    margin-right: 0.5rem;
+}
+
+.main-content{
+  background-color: #121212;
+   width: 80rem;
+    border-radius: 1rem;
+    overflow: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 4rem;
+    z-index: 10;
+    left: 0px;
+    right: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 6rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library{
+   background-color: #121212;
+   border-radius: 1rem;
+   height: 100%;
+   margin-top: 0.5rem;
+   padding: 0.5rem 0.75rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option  img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+     opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover{
+    opacity: 0.9;
+}
+
+.box{
+    background-color: #232323;
+    height: 9rem;
+    border-radius: 1rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.2rem 0.75rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom:0rem
+   
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    position: relative;
+    bottom: 0.5rem;
+    width: fit-content;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 5;
+}
+
+.sticky-arrows {
+    margin-left: 0.75rem;
+}
+
+.sticky-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nav-item {
+    margin-right:1rem;
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+.card{
+    background-color:#232323;
+    width:150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem ;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.78rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width:90%;
+    height: 50%;
+    border-top:1px solid white;
+    opacity: 0.4;
+}
+
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.album-img{
+   position: absolute;
+   height:75% ;
+   top: 12%;
+   bottom: 5%;
+   left: 0.5%;
+}
+
+.album-info{
+    position: absolute;
+    height: 80%;
+    left:7% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.album-title{
+    font-weight: 600;
+    margin-bottom: 5%;
+    font-size: 0.8rem;
+    margin-top:40% ;
+}
+
+.album-artist{
+    font-size: 0.5rem;
+    opacity: 0.8;
+    margin-top: 0.2rem;
+}
+
+.album-icons{
+    display: flex;
+    width: 5%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.album-icon1{
+    height: 30%;
+    width: 1.5%;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    opacity: 0.7;
+}
+
+.album-icon2{
+    height: 50%;
+    width: 1.75%;
+    position: absolute;
+    left: 17.5%;
+    top: 32%;
+}
+
+.controller{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 25%;
+    position: absolute;
+    bottom: 25%;
+    right: 2%;
+}
+
+.controls-icon1{
+ height: 10%;
+ width: 5%;
+ margin-right: 0.5rem;
+}
+
+.controls-icon2{
+     height: 10%;
+ width: 5%;
+  margin-right: 0.5rem;
+}
+
+.controls-icon3{
+     height: 6%;
+ width: 4%;
+   margin-right: 0.5rem;
+   opacity: 0.7;
+}
+
+.controls-icon4{
+     height: 5%;
+ width: 3%;
+   margin-right: 0.5rem;
+   opacity: 0.7;
+}
+
+.controls-icon5{
+     height: 8%;
+ width: 5%;
+  margin-right: 0.5rem;
+}
+
+.controls-icon1:hover{
+    opacity: 1
+}
+
+.controls-icon2:hover{
+    opacity: 1
+}
+
+.controls-icon3:hover{
+    opacity: 1
+}
+
+.controls-icon4:hover{
+    opacity: 1
+}
+
+.controls-icon5:hover{
+    opacity: 1
+}
+
+input[type="range"]{
+    accent-color: green;
+}
+
+.player{
+    width: 50%;
+    position:absolute;
+    left: 25%;
+    top: 25%;
+}
+
+.player-icon{
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.player-icon:hover{
+    opacity: 1;
+}
+
+.playbackbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playback-slider{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.playback-slider::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.playback-slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
